@@ -42,3 +42,24 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Manrope",sans-serif}a{color:inheri
 @media(max-width:1100px){.nav{gap:14px}.evidence-grid{grid-template-columns:repeat(2,1fr)}.competency-intro{max-width:none;margin-left:0}.credential-cards{grid-template-columns:1fr}.credential-card{min-height:250px}}
 @media(max-width:800px){.site-header{padding:0 5vw}.nav{display:none}.section{padding:78px 6vw}.hero{grid-template-columns:1fr;min-height:auto;padding-top:60px}.hero-profile{min-height:380px;order:1}.hero-copy{order:2}.profile-frame{width:min(245px,68vw)}.profile-orbit-a{width:350px;height:155px}.profile-orbit-b{width:155px;height:350px}.evidence-band{grid-template-columns:1fr;padding:60px 6vw}.evidence-grid{grid-template-columns:1fr 1fr}.split,.role-block,.tech-row,.education-item{grid-template-columns:1fr;gap:25px}.competency-intro{margin-bottom:22px}.competency-body{padding-left:48px}.project-grid{grid-template-columns:1fr}.credential-cards{grid-template-columns:1fr}.footer{padding:22px 6vw}}
 @media(max-width:520px){.evidence-grid{grid-template-columns:1fr}.competency-item summary{grid-template-columns:45px 1fr 22px}.competency-body{padding-left:45px}.hero h1{font-size:4rem}}
+
+/* v4.1 requested visual refinements */
+.hero-profile .profile-orbit-a{transform:translateY(135px) rotate(-24deg);z-index:1}
+.hero-profile .profile-orbit-b{transform:translateY(120px) rotate(24deg);z-index:1}
+.hero-profile .profile-frame{z-index:3}
+.hero-profile{overflow:visible}
+.metric-unit{display:inline-block;font-size:.52em;line-height:1;letter-spacing:-.01em;margin-left:5px;vertical-align:baseline}
+.competency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#d0d1c9;margin-left:auto;max-width:1060px;margin-top:22px}
+.competency-panel{background:var(--bg);padding:32px 28px;min-height:245px;position:relative}
+.competency-panel:after{content:"";position:absolute;left:0;bottom:0;width:34%;height:4px;background:var(--accent);transition:width .25s ease}
+.competency-panel:hover:after{width:55%}
+.competency-number{font:700 .65rem "Manrope";color:#8c8d84;letter-spacing:.06em}
+.competency-panel h3{font:800 clamp(1.35rem,2vw,2rem)/1.05 "Manrope";letter-spacing:-.04em;margin:24px 0 18px}
+.competency-list{display:flex;flex-wrap:wrap;gap:7px}
+.competency-list span{font-size:.74rem;padding:7px 10px;border:1px solid #c7c8c0;border-radius:999px;background:#f3f3ed}
+@media(max-width:1000px){.competency-grid{grid-template-columns:1fr}}
+@media(max-width:800px){
+  .hero-profile .profile-orbit-a{transform:translateY(95px) rotate(-24deg)}
+  .hero-profile .profile-orbit-b{transform:translateY(85px) rotate(24deg)}
+  .competency-grid{grid-template-columns:1fr}
+}
