@@ -1,13 +1,10 @@
-# Sanjeewa Dissanayake — Personal Portfolio
+# Sanjeewa Dissanayake — Personal Career Portfolio v2
 
-A modern minimalist personal website for GitHub Pages.
+This version keeps the existing modern minimalist design and replaces the content with material from the supplied Master Career Portfolio.
 
-## Before publishing
-1. Replace `documents/Sanjeewa-Dissanayake-CV.pdf` with your latest CV PDF.
-2. Review the LinkedIn URL in `index.html`.
-3. Review the email address in `index.html`.
-4. Create a GitHub repository named `YOURUSERNAME.github.io`.
-5. Upload all files from this folder.
-6. In GitHub: Settings → Pages → Deploy from branch → `main` → `/ (root)`.
+## GitHub Pages
+Replace the existing `index.html`, `style.css`, and `script.js` in the repository.
+Keep the CV at:
+`documents/Sanjeewa-Dissanayake-CV.pdf`
 
-The website is static HTML/CSS/JavaScript and requires no paid hosting.
+The site is static and can continue using GitHub Pages at no hosting cost.
