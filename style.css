@@ -1,0 +1,113 @@
+* { box-sizing: border-box; }
+:root {
+  --bg: #f6f6f2;
+  --ink: #171717;
+  --muted: #6d6d68;
+  --line: #d9d9d2;
+  --card: #ecece6;
+  --accent: #c8ff4a;
+}
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.6;
+}
+h1,h2,h3,p { margin-top: 0; }
+h1,h2,h3 { font-family: "Manrope", sans-serif; }
+a { color: inherit; text-decoration: none; }
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 76px; padding: 0 5vw;
+  background: rgba(246,246,242,.88); backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(217,217,210,.7);
+}
+.brand { font: 800 1.25rem "Manrope", sans-serif; letter-spacing: -.06em; }
+.brand span { color: #789b00; }
+.nav { display: flex; gap: 30px; font-size: .86rem; color: var(--muted); }
+.nav a:hover { color: var(--ink); }
+.nav-cta { font-size: .82rem; font-weight: 700; border-bottom: 1px solid var(--ink); }
+.section { padding: 110px 8vw; border-bottom: 1px solid var(--line); }
+.hero {
+  min-height: calc(100vh - 76px); display: grid; grid-template-columns: 1.1fr .9fr;
+  align-items: center; gap: 5vw; padding-top: 80px; padding-bottom: 80px;
+}
+.eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 700; color: var(--muted); }
+.hero h1 { font-size: clamp(4.2rem, 9vw, 8.8rem); line-height: .88; letter-spacing: -.075em; margin: 28px 0; }
+.hero h1 span { color: #7b7b74; }
+.hero-role { font: 600 clamp(1rem, 1.7vw, 1.35rem) "Manrope", sans-serif; }
+.hero-role i { color: #879f31; font-style: normal; margin: 0 7px; }
+.hero-intro { max-width: 650px; margin: 26px 0 34px; color: var(--muted); font-size: 1.03rem; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.button {
+  display: inline-flex; align-items: center; gap: 18px; padding: 14px 20px;
+  border: 1px solid var(--ink); font-weight: 700; font-size: .84rem; transition: .2s ease;
+}
+.button span { font-size: 1.1rem; }
+.button-dark { background: var(--ink); color: white; }
+.button-light { background: transparent; }
+.button:hover { transform: translateY(-2px); }
+.hero-mark { position: relative; min-height: 500px; display: grid; place-items: center; }
+.orb { width: 270px; height: 270px; border-radius: 50%; background: var(--accent); filter: blur(.2px); }
+.orbit { position: absolute; border: 1px solid #aaa; border-radius: 50%; transform: rotate(-24deg); }
+.orbit-one { width: 410px; height: 180px; }
+.orbit-two { width: 180px; height: 410px; transform: rotate(24deg); }
+.mark-text { position: absolute; text-align: center; font: 800 1rem/1.05 "Manrope", sans-serif; letter-spacing: .1em; }
+.split { display: grid; grid-template-columns: .28fr .72fr; gap: 6vw; }
+.section-label { color: var(--muted); text-transform: uppercase; letter-spacing: .13em; font-size: .72rem; font-weight: 700; }
+.section-content { max-width: 900px; }
+.section-content h2, .portfolio-note h2 { font-size: clamp(2.4rem, 5vw, 5.2rem); line-height: .98; letter-spacing: -.06em; margin-bottom: 30px; }
+.section-content h2 em, .portfolio-note h2 em { font-style: normal; color: #85857f; }
+.section-content > p { max-width: 760px; color: var(--muted); font-size: 1.05rem; }
+.experience-list { margin-top: 20px; }
+.experience-item {
+  display: grid; grid-template-columns: .32fr .68fr; gap: 6vw;
+  padding: 48px 0; border-top: 1px solid var(--line);
+}
+.experience-meta { display: flex; flex-direction: column; gap: 5px; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; }
+.experience-item h3 { font-size: 1.65rem; margin-bottom: 4px; }
+.role { color: #777770; margin-bottom: 20px; font-weight: 600; }
+.experience-item ul { margin: 0; padding-left: 20px; color: var(--muted); }
+.experience-item li { margin-bottom: 9px; }
+.skills-section { background: var(--card); }
+.skill-group { padding: 28px 0; border-bottom: 1px solid #d2d2cb; }
+.skill-title { font: 700 .8rem "Manrope", sans-serif; text-transform: uppercase; letter-spacing: .1em; }
+.tags { display: flex; flex-wrap: wrap; gap: 9px; }
+.tags span { padding: 8px 12px; border: 1px solid #c9c9c1; border-radius: 100px; font-size: .82rem; }
+.education-card {
+  margin-top: 35px; padding: 55px; background: var(--ink); color: white;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6vw;
+}
+.education-card h2 { font-size: clamp(2rem, 4vw, 4rem); line-height: 1; letter-spacing: -.055em; margin: 15px 0 8px; }
+.degree { color: #c7ff48; font-size: 1.1rem; font-weight: 600; }
+.education-details { align-self: end; color: #b8b8b3; }
+.education-details strong { color: white; }
+.portfolio-note { display: grid; grid-template-columns: .28fr .72fr; gap: 6vw; }
+.contact { background: var(--ink); color: white; border-bottom: 0; }
+.contact-inner { max-width: 1000px; }
+.contact h2 { font-size: clamp(4rem, 9vw, 8.5rem); line-height: .85; letter-spacing: -.08em; margin: 25px 0; }
+.contact .eyebrow { color: #aaa; }
+.contact-inner > p:not(.eyebrow) { color: #aaa; max-width: 580px; }
+.contact-links { display: flex; flex-direction: column; margin-top: 45px; }
+.contact-links a { padding: 17px 0; border-top: 1px solid #333; display: flex; justify-content: space-between; font-weight: 600; }
+.contact-links a:hover { color: #c7ff48; }
+.footer { display: flex; justify-content: space-between; padding: 25px 8vw; background: var(--ink); color: #777; font-size: .75rem; }
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+@media (max-width: 800px) {
+  .site-header { padding: 0 5vw; }
+  .nav { display: none; }
+  .section { padding: 78px 6vw; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 70px; }
+  .hero-mark { min-height: 330px; }
+  .orb { width: 190px; height: 190px; }
+  .orbit-one { width: 300px; height: 135px; }
+  .orbit-two { width: 135px; height: 300px; }
+  .split, .portfolio-note, .experience-item, .education-card { grid-template-columns: 1fr; gap: 30px; }
+  .experience-item { padding: 38px 0; }
+  .education-card { padding: 35px; }
+  .footer { padding: 22px 6vw; flex-direction: column; gap: 5px; }
+}
