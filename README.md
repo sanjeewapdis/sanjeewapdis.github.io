@@ -1,27 +1,19 @@
-# Sanjeewa Dissanayake — Personal Portfolio v3
+# Sanjeewa Dissanayake — Personal Portfolio v4
 
-This version combines the supplied Master Career Portfolio and Master CV content while keeping the existing modern minimalist visual language.
+Requested design updates:
+- Smaller profile photo positioned to the left of the hero summary.
+- Original IT × DATA orbital visual retained behind/around the profile photo.
+- Work-rights text remains in the location line.
+- Contact button removed from the hero.
+- Career Evidence uses clickable 3D flip tiles showing company and dates on the reverse.
+- Career Story uses a continuous editorial timeline rather than cards.
+- Core Competencies use expandable accordion sections.
+- Experience content remains comprehensive.
+- Professional Development contains certifications/completed learning only.
+- Footer contains only the copyright note.
 
-## Key design changes
-- Work-rights information is included in the location line, not in a separate box.
-- Career evidence sits immediately below the professional summary with animated reveal effects.
-- Career Story is a continuous reading-style timeline, not cards.
-- Descriptive text is justified.
-- The complete experience content from the supplied CV is included.
-- Professional Development is presented as a featured visual section.
-- Footer contains only the left-side copyright note.
+Profile photo path:
+`assets/Profile picture Sanjeewa.jpeg`
 
-## Profile photo
-The hero is already configured to display:
-`assets/profile-photo.jpg`
-
-Place your actual professional headshot at exactly that path before publishing. A clean initials fallback (`SD`) is shown until the image is added.
-
-## CV
-The site links to:
+CV path:
 `documents/Sanjeewa-Dissanayake-CV.pdf`
-
-Replace that file with your final CV PDF.
-
-## Publish
-Replace `index.html`, `style.css`, and `script.js` in your existing GitHub Pages repository. Keep the `documents` folder and add the profile photo under `assets/profile-photo.jpg`.
