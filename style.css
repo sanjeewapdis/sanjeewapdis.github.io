@@ -63,3 +63,27 @@ h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:"Manrope",sans-serif}a{color:inheri
   .hero-profile .profile-orbit-b{transform:translateY(85px) rotate(24deg)}
   .competency-grid{grid-template-columns:1fr}
 }
+
+/* v4.2 requested refinements */
+.site-header{background:#171717;border-bottom-color:#2d2d2d}
+.site-header .brand,.site-header .nav a,.site-header .nav-cta{color:#fff}
+.site-header .brand span{color:#c8ff4a}
+.site-header .nav a:hover,.site-header .nav-cta:hover{color:#c8ff4a}
+.site-header .nav-cta{border-bottom-color:#fff}
+.site-header .nav-cta:hover{border-bottom-color:#c8ff4a}
+
+.contact{position:relative;display:grid;grid-template-columns:1fr .55fr;align-items:center;gap:5vw;overflow:hidden}
+.contact-inner{position:relative;z-index:3}
+.contact-logo{position:relative;min-height:390px;display:grid;place-items:center;z-index:2}
+.contact-orb{width:205px;height:205px;border-radius:50%;background:var(--accent);position:relative;z-index:2}
+.contact-orbit{position:absolute;border:1px solid #575757;border-radius:50%}
+.contact-orbit-a{width:350px;height:150px;transform:rotate(-24deg)}
+.contact-orbit-b{width:150px;height:350px;transform:rotate(24deg)}
+.contact-logo-text{position:absolute;z-index:3;text-align:center;color:#171717;font:800 1rem/1.05 "Manrope",sans-serif;letter-spacing:.1em}
+@media(max-width:800px){
+  .contact{grid-template-columns:1fr;padding-bottom:50px}
+  .contact-logo{min-height:300px;margin-top:20px}
+  .contact-orb{width:165px;height:165px}
+  .contact-orbit-a{width:285px;height:122px}
+  .contact-orbit-b{width:122px;height:285px}
+}
